@@ -1,4 +1,4 @@
-# Редактор параметров товара
+# [Редактор параметров товара](https://marvelous-swan-11a189.netlify.app/)
 
 Веб-приложение для редактирования параметров товара с современным интерфейсом и удобным управлением.
 
@@ -22,7 +22,7 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/your-username/selsup-t.git
+git clone https://github.com/VadimOsin/Selsup.git
 ```
 
 2. Установите зависимости:
