@@ -1,0 +1,124 @@
+.l-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	padding: 2rem;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 12px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.l-two-columns {
+	display: flex;
+	gap: 3rem;
+	align-items: flex-start;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.c-app {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 2rem;
+	background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+.c-param-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1vh;
+}
+
+.c-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 100%;
+}
+
+.c-item {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	padding: 1rem;
+	background: rgba(255, 255, 255, 0.03);
+	border-radius: 8px;
+	transition: all 0.3s ease;
+}
+
+.c-item:hover {
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.c-item__button {
+	padding: 0.5rem 1rem;
+	background: #ff4444;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.c-item__button:hover {
+	background: #ff6666;
+}
+
+.c-log-button {
+	margin-top: 1rem;
+	padding: 0.75rem 1.5rem;
+	background: #646CFF;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.c-log-button:hover {
+	background: #535BF2;
+	transform: translateY(-1px);
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	color: rgba(255, 255, 255, 0.9);
+	font-weight: 500;
+}
+
+input, select {
+	padding: 0.75rem;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 6px;
+	color: white;
+	font-size: 1rem;
+	transition: all 0.2s ease;
+}
+
+input:focus, select:focus {
+	outline: none;
+	border-color: #646CFF;
+	box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+}
+
+button[disabled] {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+	.l-two-columns {
+		flex-direction: column;
+		gap: 2rem;
+	}
+	
+	.l-container {
+		padding: 1.5rem;
+	}
+}
